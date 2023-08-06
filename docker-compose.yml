@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  node:
+    build: .
+    environment:
+      # Node.jsのグローバル変数: 開発用途なのでdevelopmentを指定
+      - NODE_ENV=development
+    volumes:
+      - ./:/usr/src/app
+    command: sh -c 'cd react-app && yarn start'
+    ports:
+      - '3000:3000'

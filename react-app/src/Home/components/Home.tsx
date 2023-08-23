@@ -14,7 +14,9 @@ const Home: React.FC = () => (
             </Grid>
         </Grid>
         <p>各機能を追加予定だよ</p>
-        <Link to="/memo">Memo機能</Link>
+        <Link to="/memo"><p>Memo機能</p></Link>
+
+        <Link to="/regex"><p>正規表現</p></Link>
         <Navbar />
         
     </div>
